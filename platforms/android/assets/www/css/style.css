@@ -1,0 +1,189 @@
+.loginBg{
+
+background: rgba(73,155,234,1);
+background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 45%, rgba(73,155,234,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(45%, rgba(32,124,229,1)), color-stop(100%, rgba(73,155,234,1)));
+background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 45%, rgba(73,155,234,1) 100%);
+background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 45%, rgba(73,155,234,1) 100%);
+background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 45%, rgba(73,155,234,1) 100%);
+background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 45%, rgba(73,155,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#499bea', GradientType=1 );
+
+}
+
+.app-logo{ max-width:200px; margin:auto; background-repeat:no-repeat;background-position:center;}
+.top-content { padding-top: 10vh;  text-align: center;   }
+.loginButton{ padding-bottom:0px;}
+.remvoeBP{ padding-bottom:0px;}
+.removePM{ margin-top:20px; margin-bottom:0px; padding-top:0px; padding-bottom:0px; }
+
+#menuLinks .list .item{ border-color:#479CF7;}
+#menuLinks .list .item a{ background:#387EF5; color:#fff;}
+
+.bar-subheader {
+  height: 55px !important;
+}
+.has-subheader {
+  top: 89px !important;
+}
+
+/* ================= action sheet style days =========== */
+.action-sheet-options button:last-child{
+	background-color: #33cd5f;
+	border: solid 1px white !important;
+	height: 100px !important;
+	color: white !important;
+}
+
+.action-sheet-options button:not(:last-child){
+	background-color: #33cd5f;
+	border: solid 1px white !important;
+	height: 100px !important;
+	width: 33.3% !important;
+	/*width: 50%;*/
+	display: inline-block;
+	color: white !important;
+}
+
+
+
+
+.platform-android .action-sheet-backdrop.active {
+background-color: rgba(0, 0, 0, 0.2) !important; }
+
+
+
+.platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button {
+	text-align: center;
+	border-color: transparent;
+	font-size: 16px;
+	color: inherit; 
+}
+
+.platform-android .action-sheet .action-sheet-title {
+font-size: 14px;
+padding: 16px !important;
+color: #666; 
+}
+
+
+.action-sheet {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    width: auto !important;
+    z-index: 11 !important;
+    overflow: hidden !important;
+}
+
+.action-sheet-group {
+    margin-bottom: 8px !important;
+    border-radius: 4px !important;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.action-sheet .button {
+    display: block;
+    padding: 1px;
+    width: 100%;
+    border-radius: 0;
+    border-color: #d1d3d6;
+    background-color: transparent;
+    color: #007aff !important;
+    font-size: 21px;
+}
+
+.platform-android .action-sheet-cancel {
+	display: block !important; 
+}
+
+.platform-android .action-sheet-has-icons .button {
+padding-left: 0px; 
+
+
+}
+
+/*.action-sheet-has-icons .icon {
+    position: absolute;
+    left: 45% !important;
+  
+
+    padding: 20px 0px 0px 0px;
+  
+}
+ */
+
+.day{
+	color: yellow;
+	left: 40% !important;
+  
+
+    padding: 25px 0px 0px 0px;
+}
+
+.day-domingo{
+    color: yellow;
+    left: 65% !important;
+    font-size: 50px;
+ 
+
+    /*padding: 20px 0px 0px 0px;*/
+}
+
+/*.action-sheet-has-icons .icon< button{
+	background-color: red !important;
+}
+*/
+ .action-sheet-options .button + .day{
+    /* estos estilos se aplican al elemento <li>*/
+    background-color: red !important;
+}
+.dd{
+	color: red;
+}
+
+.details {
+    padding: 0px 12px 20px 12px;
+    background-color: #33cd5f;
+    color: white;
+}
+.details h4{
+    color: white;
+}
+
+.details img {
+    float: left;
+    margin-right: 12px;
+}
+
+.list {
+    clear: both;
+}
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.bar.bar-header .button+.title {
+text-align: center !important;
+left: 10%;
+line-height: 46px;
+}
+
+.icon-detalle{
+    color: #33cd5f;
+}
+
+.user{
+    border-radius: 50%;
+    border: solid #33cd5f 2px;
+}
+
+.datos {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: none !important; 
+}

@@ -1,0 +1,46 @@
+
+<ion-view title="Detalle cliente">
+
+  <!-- <ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-outline button-light" ng-click="goBack()"><i class="ion-arrow-left-c"></i> Back</button>
+    
+    <h1 class="title">Clientes</h1>
+    <div class="buttons">
+
+      <button class="button button-clear" ng-click="logout()">Salir</button>
+    </div>
+  </ion-header-bar> -->
+   
+  <ion-content >
+    
+     <div class="details">
+          <img src="img/user.png" width="100" height="100" class="user" />
+          <h4>{{ cliente.nombre }} {{ cliente.apellidos }}</h4>
+          <p>{{ cliente.codigo }}<br/>
+          </p>
+      </div>
+
+      <div class="list datos card">
+         
+          <a class="item item-icon-left" ><i class="icon ion-ios-list icon-detalle"></i>Categoria<p>{{cliente.categoria}}</p></a>
+          <a class="item item-icon-left"  ><i class="icon ion-home icon-detalle"></i>Direccion<p>{{cliente.direccion}}</p></a>
+          <a class="item item-icon-left"  ><i class="icon ion-person-stalker icon-detalle"></i>Referencia<p>{{cliente.referencia}}</p></a>
+           <a class="item item-icon-left"  ><i class="icon ion-ios-paper icon-detalle"></i>Tipo de recarga<p>{{cliente.tipo_recarga}}</p></a>
+
+
+      </div>
+        
+  </ion-content>
+</ion-view>
+
+
+
+<ion-footer-bar class="bar bar-positive">
+  
+
+  <div class="button-bar">
+    <button class="button icon-left ion-ios-cart button-positive">Ingresar ventas</button>
+    
+  </div>
+</ion-footer-bar>
+

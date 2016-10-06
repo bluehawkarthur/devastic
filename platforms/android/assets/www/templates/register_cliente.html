@@ -1,0 +1,70 @@
+<ion-view title="Create a new account">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Codigo" ng-model="cliente.codigo">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Nombre" ng-model="cliente.nombre">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Apellidos" ng-model="cliente.apellidos">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Direccion" ng-model="cliente.direccion">
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+            Categoria
+        </div>
+        <select ng-model="cliente.categoria">
+            <option>tienda de barrio</option>
+            <option>farmacia</option>
+            <option>almacén</option>
+            <option>mini mercado</option>
+            <option>supermercado</option>
+            <option>gomeria</option>
+            <option>pastillero</option>
+            <option>pensión</option>
+        </select>
+      </label>
+
+      <label class="item item-input">
+        <input type="text" placeholder="Referencia" ng-model="cliente.referencia">
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+            Tipo de recarga
+        </div>
+        <select ng-model="cliente.tipo_recarga">
+            <option>Entel</option>
+            <option>Viva</option>
+            <option>Ambas</option>
+        </select>
+      </label>
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+            Dia de visita
+        </div>
+        <select ng-model="cliente.dia_visita">
+            <option>Lunes</option>
+            <option>Martes</option>
+            <option>Miercoles</option>
+            <option>Jueves</option>
+            <option>Viernes</option>
+            <option>Sabado</option>
+            <option>Domingo</option>
+
+        </select>
+      </label>
+
+      
+      </div>
+    <button class="button button-full button-positive" ng-click="guardar()">
+      Sign up
+    </button>
+  </ion-content>
+</ion-view>

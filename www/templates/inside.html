@@ -1,0 +1,89 @@
+<ion-view hide-back-button="true" >
+<ion-nav-title>
+    Clientes
+</ion-nav-title>
+<ion-nav-buttons side="right">        
+    <div class="buttons">
+      <button class="button " ui-sref="register_cliente">Registrar</button>
+
+      <button class="button button-clear" ng-click="logout()">Salir</button>
+    </div>
+</ion-nav-buttons>
+
+  <ion-header-bar align-title="center" class="bar-positive">
+
+    <h1 class="title">Clientes</h1>
+    <div class="buttons">
+      <button class="button " ui-sref="register_cliente">Registrar</button>
+
+      <button class="button button-clear" ng-click="logout()">Salir</button>
+    </div>
+  </ion-header-bar>
+   <div class="bar bar-subheader bar-secondary-nav">
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+
+      <form name="searchForm">
+        <input type="text" class="searchbox" placeholder="Search Clients" id="searchClients"  name="searchClients" ng-model="search" >
+
+      </form>
+
+    </label>
+   
+  </div>
+  <ion-content class='has-subheader'>
+ 
+      
+
+      <ion-list id="clientes-list2">
+            <ion-item class="item-icon-left item-icon-right positive" id="clientes-list-item4" ng-click="getCliente(c)" collection-repeat="c in clientes| filter:search|filter:day">
+                <i class="icon ion-android-person"></i>{{ c.codigo }}
+                <span class="item-note">{{c.nombre}}</span>
+                <i class="icon ion-chevron-right"></i>
+            </ion-item>       
+      </ion-list>
+    
+    
+  </ion-content>
+</ion-view>
+
+<!-- <div class="bar bar-footer bar-balanced">
+
+  <button class="button" ng-click="myAcSheet()" >Dias</button>
+</div> -->
+<!--  <ion-footer-bar class="bar-positive">
+      <button class="button button-full" ng-click="myAcSheet()" >Dias</button>
+
+    </ion-footer-bar> -->
+
+<ion-footer-bar class="bar bar-positive">
+  <div class="button-bar">
+    <a class="button button-positive icon-left ion-calendar" ng-click="myAcSheet()">Dias</a>
+    
+  </div>
+</ion-footer-bar>
+
+
+
+<!-- <ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">Member area</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="logout()">Logout</button>
+    </div>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{memberinfo}}
+      </div>
+    </div>
+    <button class="button button-full button-assertive" ng-click="destroySession()">
+      Destroy token
+    </button>
+    <button class="button button-full button-balanced" ng-click="getInfo()">
+      Get Memberinfo
+    </button>
+  </ion-content>
+</ion-view>
+ -->
